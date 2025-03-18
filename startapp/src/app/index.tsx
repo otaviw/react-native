@@ -1,5 +1,5 @@
 import {useState} from "react"
-import {View, Text, StyleSheet, Alert} from "react-native"
+import {View, Text, StyleSheet, Alert, } from "react-native"
 import {router} from "expo-router"
 
 import {Button} from "@/components/button"
@@ -23,7 +23,8 @@ export default function Index(){
     <View style={styles.container}>
       <Text style={styles.title}>Olá, {name}</Text>
 
-      <Input onChangeText={setName}/>
+      
+    <Input onChangeText={setName}/>
 
       <Button title="Continuar" onPress={handleNext}/>
     </View>
